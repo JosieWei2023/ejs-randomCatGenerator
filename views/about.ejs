@@ -3,11 +3,13 @@
     <link rel="stylesheet" href="/styles/content.css">
 </head>
 
-
 <%- include("partials/header.ejs") %>
 
-<h1><%= content.name %></h1>
-<img class="profile" src=<%= content.image.url %> alt="profile">
+<h1>About Me</h1>
 <br>
-<p><%= content.temperament %></p>
+<p><%= content.description %></p>
+<br>
+<p>Find more in <a href="<%= content.wikipedia_url %>">wikipedia</a></p>
+
+
 <%- include("partials/footer.ejs") %>
